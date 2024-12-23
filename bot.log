@@ -1,0 +1,76 @@
+2024-12-23 12:08:37,886 - INFO - 172.31.196.65 - - [23/Dec/2024 12:08:37] "GET / HTTP/1.1" 200 -
+2024-12-23 12:08:38,917 - INFO - Shard ID None has connected to Gateway (Session ID: 32f41759cf8a04c14110aeb87bf0868c).
+2024-12-23 12:10:35,667 - INFO - logging in using static token
+2024-12-23 12:10:35,687 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.31.196.65:8080
+2024-12-23 12:10:35,689 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-23 12:10:36,254 - INFO - 172.31.196.65 - - [23/Dec/2024 12:10:36] "GET / HTTP/1.1" 200 -
+2024-12-23 12:10:37,182 - INFO - Shard ID None has connected to Gateway (Session ID: 9809e1b4a06cef91d82f73ec824ad23a).
+2024-12-23 12:10:39,205 - INFO - cogs.status_changer has been loaded.
+2024-12-23 12:10:39,208 - INFO - Loaded request channels: {'1320713275347963916': '1320721981284421737'}
+2024-12-23 12:10:39,214 - INFO - cogs.setup has been loaded.
+2024-12-23 12:10:39,216 - INFO - DragmeCog initialized.
+2024-12-23 12:10:39,217 - INFO - cogs.dragme has been loaded.
+2024-12-23 12:10:39,226 - INFO - AvatarBannerUpdater initialized with owner IDs: {1317491141532323925}
+2024-12-23 12:10:39,236 - INFO - Status changed to: Peace in Sukoon 🌷
+2024-12-23 12:10:39,631 - INFO - Slash commands synced for guild 1320713275347963916
+2024-12-23 12:10:39,637 - INFO - cogs.AvatarBannerUpdater has been loaded.
+2024-12-23 12:10:52,790 - INFO - Bot banner updated by user ladkihubhai
+2024-12-23 12:11:24,097 - INFO - Bot avatar updated by user ladkihubhai
+2024-12-23 12:11:39,241 - INFO - Status changed to: Ready To Serve ✌
+2024-12-23 12:11:45,634 - ERROR - Ignoring exception in command 'updateavatar'
+Traceback (most recent call last):
+  File "/home/runner/bot/.pythonlibs/lib/python3.11/site-packages/discord/app_commands/commands.py", line 857, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/bot/cogs/AvatarBannerUpdater.py", line 45, in update_avatar
+    await interaction.followup.send(f"Please wait {int(60 - (current_time - self.last_avatar_update))} more seconds before updating the avatar.", ephemeral=True)
+  File "/home/runner/bot/.pythonlibs/lib/python3.11/site-packages/discord/webhook/async_.py", line 1843, in send
+    data = await adapter.execute_webhook(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/bot/.pythonlibs/lib/python3.11/site-packages/discord/webhook/async_.py", line 221, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10015): Unknown Webhook
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/runner/bot/.pythonlibs/lib/python3.11/site-packages/discord/app_commands/tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/home/runner/bot/.pythonlibs/lib/python3.11/site-packages/discord/app_commands/commands.py", line 883, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/bot/.pythonlibs/lib/python3.11/site-packages/discord/app_commands/commands.py", line 876, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'updateavatar' raised an exception: NotFound: 404 Not Found (error code: 10015): Unknown Webhook
+2024-12-23 12:12:39,282 - INFO - Status changed to: Listening to /help
+2024-12-23 12:12:53,466 - INFO - Bot avatar updated by user ladkihubhai
+2024-12-23 12:13:39,300 - INFO - Status changed to: Made By Oxyg3n.fr
+2024-12-23 12:13:53,346 - INFO - logging in using static token
+2024-12-23 12:13:53,373 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.31.196.65:8080
+2024-12-23 12:13:53,374 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-23 12:13:53,829 - INFO - 172.31.196.65 - - [23/Dec/2024 12:13:53] "GET / HTTP/1.1" 200 -
+2024-12-23 12:13:55,021 - INFO - Shard ID None has connected to Gateway (Session ID: e71a3bb7ecd4d9d14d8358461b9ed3ed).
+2024-12-23 12:13:57,043 - INFO - cogs.status_changer has been loaded.
+2024-12-23 12:13:57,046 - INFO - Loaded request channels: {'1320713275347963916': '1320721981284421737'}
+2024-12-23 12:13:57,048 - INFO - cogs.setup has been loaded.
+2024-12-23 12:13:57,050 - INFO - DragmeCog initialized.
+2024-12-23 12:13:57,052 - INFO - cogs.dragme has been loaded.
+2024-12-23 12:13:57,088 - INFO - AvatarBannerUpdater initialized with owner IDs: {1317491141532323925}
+2024-12-23 12:13:57,094 - INFO - Status changed to: Peace in Sukoon 🌷
+2024-12-23 12:13:57,520 - INFO - Slash commands synced for guild 1320713275347963916
+2024-12-23 12:13:57,521 - INFO - cogs.AvatarBannerUpdater has been loaded.
+2024-12-23 12:14:10,412 - INFO - Bot avatar updated by user ladkihubhai
+2024-12-23 12:14:47,756 - INFO - Bot banner updated by user ladkihubhai
+2024-12-23 12:14:57,146 - INFO - Status changed to: Ready To Serve ✌
+2024-12-23 12:15:57,148 - INFO - Status changed to: Listening to /help
+2024-12-23 12:16:02,725 - INFO - Bot avatar updated by user ladkihubhai
+2024-12-23 12:16:23,112 - INFO - Bot banner updated by user ladkihubhai
+2024-12-23 12:16:57,166 - INFO - Status changed to: Made By Oxyg3n.fr
+2024-12-23 12:17:57,204 - INFO - Status changed to: Join Sukoon 🌷
+2024-12-23 12:18:57,208 - INFO - Status changed to: Peace? || .gg/sukoon <33
